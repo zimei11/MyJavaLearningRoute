@@ -1,4 +1,4 @@
-![1](http://img.zimei.xyz/202206241142404.png)
+![image-20220624115730214](http://img.zimei.xyz/202206241157241.png)
 
 # 子美的笔记
 
