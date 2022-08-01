@@ -359,7 +359,7 @@
     </div>
 
     <!-- 插入图片，id：HTML元素标签的标志，可以用来唯一表示该元素的标识符-->
-    <img id="test" width="300" src="http://img.zimei.xyz/202206291737738.png" alt="加载失败">
+    <img id="test" width="300" src="http://img.zimei.fun/202206291737738.png" alt="加载失败">
 
     <!-- 分隔线 -->
     <hr>
@@ -442,7 +442,7 @@
 
 表单一般使用`form`标签将其囊括。
 
-![1](http://img.zimei.xyz/202206291803972.png)
+![1](http://img.zimei.fun/202206291803972.png)
 
 ------
 

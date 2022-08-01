@@ -1,4 +1,4 @@
-<img src="http://img.zimei.xyz/202206241157241.png"  align="right" />
+<img src="http://img.zimei.fun/202206241157241.png"  align="right" />
 
 # 子美的笔记
 

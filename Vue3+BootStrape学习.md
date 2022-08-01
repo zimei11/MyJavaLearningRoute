@@ -12,7 +12,7 @@
 
 **父** 先申明并return出数据。数据为对象用reactive存，里面有数据用户id,用户全名，用户名，用户姓，用户的粉丝数，该用户是否被关注。
 
-![image-20220709125556812](https://img.zimei.xyz/202207091255858.png)
+![image-20220709125556812](https://img.zimei.fun/202207091255858.png)
 
 **父** 绑定属性
 
@@ -22,11 +22,11 @@
 >
 > `v-bind`简写成`:`
 
-![image-20220709125739711](https://img.zimei.xyz/202207091257745.png)
+![image-20220709125739711](https://img.zimei.fun/202207091257745.png)
 
 **子** props：存储父组件传递给子组件的数据
 
-![image-20220709125929059](https://img.zimei.xyz/202207091259091.png)
+![image-20220709125929059](https://img.zimei.fun/202207091259091.png)
 
 > `v-if`是否
 
@@ -34,7 +34,7 @@
 
 此时只有user.is_followed为真，这个button才会显示
 
-![image-20220709130952565](https://img.zimei.xyz/202207091309603.png)
+![image-20220709130952565](https://img.zimei.fun/202207091309603.png)
 
 ### 父拿子数据
 
@@ -44,7 +44,7 @@
 >
 > setup中要传入`context`
 
-![image-20220709134724129](https://img.zimei.xyz/202207091347172.png)
+![image-20220709134724129](https://img.zimei.fun/202207091347172.png)
 
 **子** 绑定事件
 
@@ -54,31 +54,31 @@
 >
 > `v-on`简写为`@`
 
-![image-20220709132331900](https://img.zimei.xyz/202207091323952.png)
+![image-20220709132331900](https://img.zimei.fun/202207091323952.png)
 
 **父** 定义相关函数
 
 定义follow，unfollow函数并且把他们返回
 
-![image-20220709134328813](https://img.zimei.xyz/202207091343851.png)
+![image-20220709134328813](https://img.zimei.fun/202207091343851.png)
 
-![image-20220709133508686](https://img.zimei.xyz/202207091335722.png)
+![image-20220709133508686](https://img.zimei.fun/202207091335722.png)
 
 **父** 事件触发
 
 触发 父 `follow`绑定的函数
 
-![image-20220709132828725](https://img.zimei.xyz/202207091328761.png)
+![image-20220709132828725](https://img.zimei.fun/202207091328761.png)
 
 ### 拿到输入框数据
 
 > `v-model=""`
 
-![image-20220709140027888](https://img.zimei.xyz/202207091400949.png)
+![image-20220709140027888](https://img.zimei.fun/202207091400949.png)
 
 ### 组件内调用自己的
 
-![image-20220709140257495](https://img.zimei.xyz/202207091402555.png)
+![image-20220709140257495](https://img.zimei.fun/202207091402555.png)
 
 ## 动态计算
 
@@ -86,7 +86,7 @@
 >
 > 需要 导入 `computed`
 
-![image-20220709125025740](https://img.zimei.xyz/202207091250839.png)
+![image-20220709125025740](https://img.zimei.fun/202207091250839.png)
 
 需要`setup()`并且因为不支持`this`所以先传值props，再用computed动态计算。
 
