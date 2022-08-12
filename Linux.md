@@ -2,6 +2,10 @@
 
 * * *
 
+## 镜像源
+
+[Linux换国内镜像源(Ubuntu、Debian等)_Raywit的博客-CSDN博客_linux换镜像源](https://blog.csdn.net/qq_40520596/article/details/110194439)
+
 ## 登录
 
 ### 基本用法
@@ -121,3 +125,16 @@ ssh user@hostname ls -a
 scp ~/.vimrc ~/.tmux.conf myserver:
 ```
 
+## 二、保存和加载tar.gz
+
+**保存镜像**
+
+```
+`docker save <myimage>:<tag> | gzip > <myimage>_<tag>.tar.gz`
+```
+
+**加载镜像**
+
+```
+`gunzip -c 文件名.tar.gz | docker load`
+```
