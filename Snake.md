@@ -39,10 +39,10 @@ Snake
 
 每回合bot接收一个int变量，表示己方蛇的移动方向。
 
-具体格式如下：（**0，1，2，3**分别表示 **上，右，下，左**），样例程序中提供了获取游戏对局信息的各种接口，你只需要重写`nextMove`方法。
+具体格式如下：（**0，1，2，3**分别表示 **上，右，下，左**），样例程序中提供了获取游戏对局信息的各种接口，你只需要编写`nextMove`方法。
 
 ```java
-@Override
+
 public Integer nextMove(String input) {
     return 0;//则Bot贪吃蛇将一直向上走
 }
@@ -60,11 +60,14 @@ public Integer nextMove(String input) {
 ```java
 package com.lxs.botrunningsystem.utils;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 //测试用
-public class Bot implements com.lxs.botrunningsystem.utils.BotInterface {
+public class Bot implements java.util.function.Supplier<Integer> {
     static class Cell {//蛇身体（单格）
         public int x, y;
 
@@ -99,8 +102,7 @@ public class Bot implements com.lxs.botrunningsystem.utils.BotInterface {
         return res;
     }
 
-    @Override
-    public Integer nextMove(String input) {
+    public Integer nextMove(String input) {//！玩家需要编写的蛇移动核心代码
         String[] strs = input.split("#");
         int[][] g = new int[13][14];
         for (int i = 0, k = 0; i < 13; i++) {
@@ -129,6 +131,17 @@ public class Bot implements com.lxs.botrunningsystem.utils.BotInterface {
             }
         }
         return 0;//如果是死路，默认往上走自杀
+    }
+
+    @Override
+    public Integer get() {//文件读写
+        File file=new File("input.txt");
+        try {
+            Scanner scanner=new Scanner(file);
+            return nextMove(scanner.next());
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
 
