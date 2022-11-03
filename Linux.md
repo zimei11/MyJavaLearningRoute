@@ -227,12 +227,15 @@ sudo usermod -aG docker $USER
 
 #### 镜像（images）
 
-1.  `docker pull ubuntu:20.04`：拉取一个镜像
-2.  `docker images`：列出本地所有镜像
-3.  `docker image rm ubuntu:20.04` 或 `docker rmi ubuntu:20.04`：删除镜像`ubuntu:20.04`
-4.  `docker [container] commit CONTAINER IMAGE_NAME:TAG`：创建某个`container`的镜像
-5.  `docker save -o ubuntu_20_04.tar ubuntu:20.04`：将镜像`ubuntu:20.04`导出到本地文件`ubuntu_20_04.tar`中
-6.  `docker load -i ubuntu_20_04.tar`：将镜像`ubuntu:20.04`从本地文件`ubuntu_20_04.tar`中加载出来
+1. `docker pull ubuntu:20.04`：拉取一个镜像
+2. `docker images`：列出本地所有镜像
+3. `docker image rm ubuntu:20.04` 或 `docker rmi ubuntu:20.04`：删除镜像`ubuntu:20.04`
+4. `docker [container] commit CONTAINER IMAGE_NAME:TAG`：创建某个`container`的镜像
+
+   ![image-20221101124820379](https://img.zimei.fun/202211011248448.png)
+
+1.  `docker save -o ubuntu_20_04.tar ubuntu:20.04`：将镜像`ubuntu:20.04`导出到本地文件`ubuntu_20_04.tar`中
+2.  `docker load -i ubuntu_20_04.tar`：将镜像`ubuntu:20.04`从本地文件`ubuntu_20_04.tar`中加载出来
 
 * * *
 

@@ -146,3 +146,16 @@ public class Bot implements java.util.function.Supplier<Integer> {
 }
 
 ```
+
+input.txt文件存储信息格式
+
+```
+getMapString()+"#"+
+        me.getSx()+"#"+
+        me.getSy()+"#"+
+        "("+me.getStepsString()+")#"+
+        you.getSx()+"#"+
+        you.getSy()+"#"+
+        "("+you.getStepsString()+")";
+```
+
