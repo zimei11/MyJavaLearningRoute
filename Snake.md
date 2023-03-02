@@ -5,11 +5,6 @@ Snake
 
 贪食蛇(Snake)是[Bots ZiMei](https://www.zimei.fun )平台上的双人游戏。
 
-目录
---
-
-[toc]
-
 作者
 --
 
@@ -52,7 +47,7 @@ public Integer nextMove(String input) {
 
 键盘输入`w d s a`控制己方蛇的移动方向。
 
-样例程序（Java版本）
+（旧版，已失效）样例程序（Java版本）
 -----------
 
 这里提供了一个可以自动判断上下左右是否有障碍物，选择合适方向的简易Bot，你可以基于本模板开发自己的Bot程序。
@@ -149,7 +144,7 @@ public class Bot implements java.util.function.Supplier<Integer> {
 
 input.txt文件存储信息格式
 
-```
+```java
 getMapString()+"#"+
         me.getSx()+"#"+
         me.getSy()+"#"+
